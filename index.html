@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <title> following relationships between the 45 US Senators </title>
+  <link rel="stylesheet" type="text/css" href="hw4_Li Tongtong.css">
+</head>
+
+<body>
+	<nav>
+		<p id="logo">following relationships between the 45 US Senators</p>
+	</nav>
+	<section class="main">
+		<article>
+			<div class="top">
+				<p id="time">2018-04-19 <span id="source"><a href="https://github.com/geniuslee/social-media-assignment-4/blob/gh-pages/social%20media%20assignment%204.R"> Code Source </a></span></p>
+				<h1>Network Practice</h1>
+				<img id="background" src="background.jpg">
+			</div>
+			<div class="content">
+				<h2>Introduction</h2>
+				<div class="quote">
+				   <p>This interactive network graph below shows the following relationship between 45 U.S Senators on Twitter.The size of symbols reflects the fans number of a senator. And the symbols and colors are specified by gender and party of those senators.</p>
+				</div>
+				<h2>Analysis</h2>
+				<p>There are total <strong>990</strong> edges in the network, meaning there are 990 followed and following relationship between the 45 U.S. senators.The senator with Twitter handle <strong>“senatorenzi” </strong> has the most followers. And the senator whose Twitter handle is “lisamurkowski” follows the most senators. (31).The node of <strong>Lisa Murkowski </strong> has the highest betweenness at 109.10, which means that most nodes should go through it to reach all the others. And the reciprocity of the network is <strong>0.518</strong>, meaning that only half of the nodes are reciprocal nodes, from which we can see the network is not interactive enough.</p>
+				<br>
+                <iframe width="800" height="600" frameborder="0" scrolling="no" src="//plot.ly/~LiTongtong/5.embed"></iframe>
+				<p>Doing community detection by using membership functoin, the nodes are seperated into two groups, one containing 27 and the other including 18. But if we divide the nodes by party, it is clearly shown that 19 of the senators are from Democrat and 26 are from Republican. Though with a little bit difference, the result of computer's calculation is <strong>mostly closed to the fact.</strong></p>
+				 <img id=“network" src="Rplot01.jpeg">
+			</div>
+		</article>
+	</section>
+	<footer>
+		<p>Network Practice by R and Plotly</p>
+	</footer>
+ </body>
+</html>
